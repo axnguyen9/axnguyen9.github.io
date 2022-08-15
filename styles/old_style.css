@@ -121,7 +121,7 @@
 
 @keyframes float {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(0px);
   }
 
   50% {
@@ -129,13 +129,13 @@
   }
 
   100% {
-    transform: translateY(-5px);
+    transform: translateY(0px);
   }
 }
 
 @-moz-keyframes float {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(0px);
   }
 
   50% {
@@ -143,13 +143,13 @@
   }
 
   100% {
-    transform: translateY(-5px);
+    transform: translateY(0px);
   }
 }
 
 @-webkit-keyframes float {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(0px);
   }
 
   50% {
@@ -157,29 +157,7 @@
   }
 
   100% {
-    transform: translateY(-5px);
-  }
-}
-
-@keyframes spin {
-  from {
-    transform: translateY(0%) rotate(0deg);
-    opacity: 1;
-  }
-
-  to {
-    transform: translateY(700%) rotate(360deg);
-    opacity: 0;
-  }
-}
-
-@keyframes slide {
-  from {
-    transform: translateY(0%);
-  }
-
-  to {
-    transform: translateY(-80%);
+    transform: translateY(0px);
   }
 }
 
@@ -196,18 +174,11 @@ html {
 
 body {
   background-color: #F5F5F5;
-  /* background-image: url("../images/gradient_background.png");
-  background-repeat: no-repeat; */
+  background-image: url("../images/gradient_background.png");
+  background-repeat: no-repeat;
 }
 
-body.dark-mode {
-  background-color: #133A34;
-  color: #F5F5F5;
-}
-
-.img-container,
-.flower-parent,
-.city-parent {
+.img-container {
   overflow: hidden;
   position: relative;
 }
@@ -217,76 +188,13 @@ body.dark-mode {
   /* animation: 90s rotate ease-in-out infinite; */
 }
 
-#home-illustration3 {
-  position: relative;
-  z-index: 2;
-  width: 70%;
-}
-
-#flower-1 {
-  position: absolute;
-  top: -10%;
-  left: 10%;
-  animation: 8s spin ease-in-out infinite;
-  z-index: 1;
-}
-
-#flower-2 {
-  position: absolute;
-  top: -15%;
-  left: 20%;
-  animation: 6s spin ease-in-out infinite;
-  z-index: 1;
-}
-
-#flower-3 {
-  position: absolute;
-  top: -10%;
-  left: 35%;
-  animation: 7s spin ease-in-out infinite;
-  z-index: 1;
-}
-
-#flower-4 {
-  position: absolute;
-  top: -8%;
-  left: 60%;
-  animation: 7s spin ease-in-out infinite;
-  z-index: 1;
-}
-
-#flower-5 {
-  position: absolute;
-  top: -10%;
-  left: 70%;
-  animation: 8s spin ease-in-out infinite;
-  z-index: 1;
-}
-
-#flower-6 {
-  position: absolute;
-  top: -15%;
-  left: 85%;
-  animation: 6s spin ease-in-out infinite;
-  z-index: 1;
-}
-
-#sky {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  animation: 12s slide ease-in-out infinite;
-  z-index: 0;
-}
-
 /* Animation pause + play button styling */
 #animation-button {
   position: absolute;
   top: 10%;
   right: 0;
   border: none;
-  z-index: 100;
+  z-index: 1;
 }
 
 .hide {
@@ -301,48 +209,26 @@ body.dark-mode {
   width: 100%;
 }
 
-/* Filter to turn carousel arrows green */
-.carousel-control-next,
-.carousel-control-prev {
-  filter: invert(44%) sepia(26%) saturate(1066%) hue-rotate(53deg) brightness(96%) contrast(86%);
-  z-index: 99;
-}
-
-.carousel-indicators [data-bs-target] {
-  background-color: #4F852D;
-}
-
 .btn {
-  border: 3px solid #4F852D !important;
+  border: 3px solid #842640 !important;
   border-radius: .75rem;
   font-weight: bold;
   transition: .5s;
 }
 
-.btn .dark-mode {
-  border: 3px solid #B5C192 !important;
-  color: #B5C192;
-}
-
 .btn:hover {
-  border: 3px solid #945529 !important;
-  background-color: #945529;
+  border: 3px solid #188FA7 !important;
+  background-color: #188FA7;
   color: #F5F5F5 !important;
 }
 
-.btn:hover .dark-mode {
-  border: 3px solid #C7A982 !important;
-  background-color: #C7A982;
-}
-
 .btn-outline-primary {
-  color: #4F852D;
+  color: #842640 !important;
 }
 
-/* Dark mode covered in JS */
 .display-3 {
   font-family: 'Merriweather';
-  color: #4F852D;
+  color: #842640;
 }
 
 h2 {
@@ -358,19 +244,11 @@ a {
   font-family: 'Karla';
   font-weight: bold;
   text-decoration: none;
-  color: #4F852D;
-}
-
-a.dark-mode {
-  color: #B5C192;
+  color: #842640;
 }
 
 a:hover {
-  color: #945529;
-}
-
-a.dark-mode:hover {
-  color: #C7A982;
+  color: #188FA7;
 }
 
 .socials a {
@@ -378,11 +256,6 @@ a.dark-mode:hover {
 }
 
 #current {
-  color: #945529;
-  border-bottom: 1px solid #945529;
-}
-
-#current.dark-mode {
-  color: #C7A982;
-  border-bottom: 1px solid #C7A982;
+  color: #188FA7;
+  border-bottom: 1px solid #188FA7;
 }

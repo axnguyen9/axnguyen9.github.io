@@ -33,6 +33,12 @@
               class="mx-3">
               resume</a>
           </li>
+          <!-- Dark/light mode switch WIP -->
+          <!-- <div id="switch-mode-button" class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+              onclick="toggleMode()">
+            <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+          </div> -->
         </ul>
       </div>
     </nav>
@@ -43,41 +49,77 @@
           <div class="col-md-6 my-auto">
             <h1 class="display-3">Hello, I'm Anna</h1>
             <p>An Information Science (UX/UI) major,
-              Computer Science minor @ Cornell University.
-              Dedicated to empowering myself and others
+              Computer Science minor at Cornell University.
+              I'm dedicated to empowering myself and others
               through the intersections of design, tech, and
               social impact, particularly in expanding access
               to opportunity & education across underserved
               communities.</p>
             <div class="socials">
-              <a href="mailto:axn3@cornell.edu" id="email" class="me-3">axn3@cornell.edu</a>
-              <a href="https://github.com/axnguyen9" class="mx-3">github</a>
+              <a href="mailto:axn3@cornell.edu" id="email" class="me-3">email</a>
               <a href="https://www.linkedin.com/in/axnguyen/" class="mx-3">linkedin</a>
               <a href="https://www.instagram.com/missbanannamilk/" class="mx-3">medium</a>
+              <a href="https://github.com/axnguyen9" class="mx-3">github</a>
             </div>
           </div>
-          <div class="col-md-6 img-container">
-            <button type="button" class="btn btn-outline-primary" id="animation-button">
-              <div id="pause">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-pause-circle" viewBox="0 0 16 16">
-                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                  <path
-                    d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z" />
-                </svg>
-                Pause
+          <div id="carouselExampleIndicators" class="carousel col-md-6 img-container" data-bs-interval="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <button type="button" class="btn btn-outline-primary" id="animation-button">
+                <div id="pause">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-pause-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                      d="M5 6.25a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5zm3.5 0a1.25 1.25 0 1 1 2.5 0v3.5a1.25 1.25 0 1 1-2.5 0v-3.5z" />
+                  </svg>
+                  Pause
+                </div>
+                <div id="play" class="hide">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-play-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                      d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
+                  </svg>
+                  Play
+                </div>
+              </button>
+              <div class="carousel-item flower-parent active">
+                <img src="./images/vector_self.png" class="d-block w-100" alt="..." id="home-illustration2">
+                <img src="./images/flower_green.png" alt="..." id="flower-1">
+                <img src="./images/flower_green.png" alt="..." id="flower-2">
+                <img src="./images/flower_lightgreen.png" alt="..." id="flower-3">
+                <img src="./images/flower_orange.png" alt="..." id="flower-4">
+                <img src="./images/flower_green.png" alt="..." id="flower-5">
+                <img src="./images/flower_lightgreen.png" alt="..." id="flower-6">
               </div>
-              <div id="play" class="hide">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  class="bi bi-play-circle" viewBox="0 0 16 16">
-                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                  <path
-                    d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z" />
-                </svg>
-                Play
+              <div class="carousel-item">
+                <img src="./images/illustration.png" id="home-illustration" class="mx-auto img-fluid d-block w-100"
+                  alt="" />
               </div>
+              <div class="carousel-item city-parent">
+                <img src="./images/city.png" class="d-block w-100" alt="..." id="home-illustration3">
+                <img src="./images/sky-test.png" alt="..." id="sky">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-            <img src="./images/illustration.png" id="home-illustration" class="mx-auto img-fluid" alt="" />
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </div>
@@ -88,13 +130,12 @@
         <!-- Farmworker Justice -->
         <div class="row">
           <div class="col-md-6">
-            <img src="./images/FJ.png" class="rounded mx-auto img-fluid" alt="" />
+            <img src="./images/capital_one.png" class="rounded mx-auto img-fluid" alt="" />
           </div>
           <div class="col-md-6 my-auto px-md-5">
-            <p>Farmworker Justice</p>
-            <h2>Data visualization website to assist farmworker advocates</h2>
-            <p>Designed a data visualization website to help visualize data from
-              the National Agricultural Workers Survey (NAWS).
+            <p>Summer 2022 Internship</p>
+            <h2>Team Health at Capital One</h2>
+            <p>Please reach out for more details!
             </p>
             <a class="btn btn-outline-primary" target="_blank"
               href="https://medium.com/cornellh4i/creating-a-data-visualization-website-for-farmworker-advocacy-db472bc92915">READ
@@ -102,30 +143,31 @@
           </div>
         </div>
 
-        <!-- Waste to Taste -->
+        <!-- Farmworker Justice -->
         <div class="row">
           <div class="col-md-6 order-first order-md-last">
-            <img src="./images/wtt_dark.png" class="rounded mx-auto img-fluid" alt="" />
+            <img src="./images/FJ.png" class="rounded mx-auto img-fluid" alt="" />
           </div>
           <div class="col-md-6 my-auto px-md-5">
-            <p>Waste to Taste</p>
-            <h2>Mobile app for food management</h2>
-            <p>A feature enabling people to reminisce, reflect,
-              and connect, giving a more personalized watching experience.</p>
-            <button type="button" class="btn btn-outline-primary">COMING SOON</button>
+            <p>Fall 2021 Partnership with Farmworker Justice</p>
+            <h2>Website for Farmworker Advocates</h2>
+            <p>Designed a data visualization website to help visualize data from
+              the National Agricultural Workers Survey (NAWS).</p>
+            <a class="btn btn-outline-primary" target="_blank"
+            href="https://medium.com/cornellh4i/creating-a-data-visualization-website-for-farmworker-advocacy-db472bc92915">READ
+            MORE</a>
           </div>
         </div>
 
-        <!-- Aurolab -->
+        <!-- Waste to Taste -->
         <div class="row">
           <div class="col-md-6">
-            <img src="./images/aurolab.png" class="rounded mx-auto img-fluid" alt="" />
+            <img src="./images/wtt_dark.png" class="rounded mx-auto img-fluid" alt="" />
           </div>
           <div class="col-md-6 my-auto px-md-5">
-            <p>AuroImage</p>
-            <h2>Mobile app to collect data for researchers</h2>
-            <p>Designed and developed an image-collection application to be fed into
-              a machine-learning algorithm for affordable eyecare products.
+            <p>Fall 2021 product design project</p>
+            <h2>Waste to Taste</h2>
+            <p>A mobile application supporting food waste management.
             </p>
             <button type="button" class="btn btn-outline-primary">COMING SOON</button>
           </div>
@@ -134,62 +176,15 @@
         <!-- Netflix -->
         <div class="row">
           <div class="col-md-6 order-first order-md-last">
-            <img src="./images/netflix_case_study.png" class="rounded mx-auto img-fluid" alt="" />
+            <img src="./images/netflix_red.png" class="rounded mx-auto img-fluid" alt="" />
           </div>
           <div class="col-md-6 my-auto px-md-5">
-            <p>Product design case study</p>
+            <p>Spring 2020 product design case study</p>
             <h2>Bookmarks for Netflix</h2>
             <p>A feature enabling people to reminisce, reflect,
               and connect, giving a more personalized watching experience.</p>
             <a class="btn btn-outline-primary" target="_blank"
               href="https://axnguyen.medium.com/netflix-concept-reliving-our-best-moments-d16a32367970">READ MORE</a>
-          </div>
-        </div>
-
-        <!-- Pigpocket -->
-        <div class="row">
-          <div class="col-md-6">
-            <img src="./images/pigpocket_internship.png" class="rounded mx-auto img-fluid" alt="" />
-          </div>
-          <div class="col-md-6 my-auto px-md-5">
-            <p>PigPocket, LLC.</p>
-            <h2>Customer service website to build customer relations</h2>
-            <p>Developed from scratch customer service website during summer 2020 internship
-              for a startup aiming to increase financial literacy at younger ages.
-            </p>
-            <a class="btn btn-outline-primary" target="_blank"
-              href="https://axnguyen.medium.com/oink-oink-a-summer-experience-at-pigpocket-llc-dfb02cbebb0a">READ
-              MORE</a>
-          </div>
-        </div>
-
-        <!-- Art wall website -->
-        <div class="row">
-          <div class="col-md-6 order-first order-md-last">
-            <img src="./images/art_gallery.png" class="rounded mx-auto img-fluid" alt="" />
-          </div>
-          <div class="col-md-6 my-auto px-md-5">
-            <p>Art Wall</p>
-            <h2>Interactive digital art gallery of personal works</h2>
-            <p>Art Wall</p>
-            <a class="btn btn-outline-primary" target="_blank" href="http://art-wall.herokuapp.com/">VIEW MORE</a>
-          </div>
-        </div>
-
-        <!-- NextHealth -->
-        <div class="row">
-          <div class="col-md-6">
-            <img src="./images/nexthealth_hackathon.png" class="rounded mx-auto img-fluid" alt="" />
-          </div>
-          <div class="col-md-6 my-auto px-md-5">
-            <p>NextHealth</p>
-            <h2>Mobile application to empower health management</h2>
-            <p>Designed a conceptual application empowering people to take control
-              of their health and communicate effectively with their doctors.
-              Duke IDEATE Designathon 2020.
-            </p>
-            <a class="btn btn-outline-primary" target="_blank"
-              href="https://devpost.com/software/next-health-me43bk">READ MORE</a>
           </div>
         </div>
       </div>
@@ -204,16 +199,21 @@
   <script>
     const jstoggle = document.getElementById('animation-button');
     jstoggle.addEventListener('click', () => {
-      const animation = document.getElementById('home-illustration');
-      const running = animation.style.animationPlayState || 'running';
-      if (running === 'running') {
-        animation.style.animationPlayState = 'paused';
-        document.getElementById('pause').classList.add("hide");
-        document.getElementById('play').classList.remove("hide");
-      } else {
-        animation.style.animationPlayState = 'running';
-        document.getElementById('pause').classList.remove("hide");
-        document.getElementById('play').classList.add("hide");
+      // Array containing all animations
+      const animations = ["#home-illustration", "#flower-1", "#flower-2",
+        "#flower-3", "#flower-4", "#flower-5", "#flower-6", "#sky"];
+      for (a of animations) {
+        const animation = document.querySelector(a);
+        const running = animation.style.animationPlayState || 'running';
+        if (running === 'running') {
+          animation.style.animationPlayState = 'paused';
+          document.getElementById('pause').classList.add("hide");
+          document.getElementById('play').classList.remove("hide");
+        } else {
+          animation.style.animationPlayState = 'running';
+          document.getElementById('pause').classList.remove("hide");
+          document.getElementById('play').classList.add("hide");
+        }
       }
     });
   </script>
