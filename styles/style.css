@@ -319,10 +319,14 @@ body.dark-mode {
   transition: .5s;
 }
 
-.btn .dark-mode {
+.btn:hover a {
+  color: #F5F5F5;
+}
+
+/* .btn .dark-mode {
   border: 3px solid #B5C192 !important;
   color: #B5C192;
-}
+} */
 
 .btn:hover {
   border: 3px solid #945529 !important;
@@ -330,10 +334,10 @@ body.dark-mode {
   color: #F5F5F5 !important;
 }
 
-.btn:hover .dark-mode {
+/* .btn:hover .dark-mode {
   border: 3px solid #C7A982 !important;
   background-color: #C7A982;
-}
+} */
 
 .btn-outline-primary {
   color: #4F852D;
